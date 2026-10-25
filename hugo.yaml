@@ -1,0 +1,82 @@
+baseURL: https://packwolf.github.io/property-scout/
+languageCode: en-au
+defaultContentLanguage: en
+title: Property Scout by Packwolf Consulting
+
+copyright: "© Packwolf Consulting, All rights reserved."
+
+buildDrafts: false
+buildFuture: false
+
+enableRobotsTXT: true
+
+privacy:
+  youtube:
+    privacyEnhanced: true
+
+sitemap:
+  changefreq: weekly
+  priority: 0.5
+  filename: sitemap.xml
+
+canonifyURLs: false
+relativeURLs: false
+
+enableGitInfo: true
+
+frontmatter:
+  lastmod:
+    - :git
+    - lastmod
+    - date
+    - publishDate
+
+permalinks:
+  reports: "/reports/:year/:month/:slug/"
+  insights: "/insights/:year/:month/:slug/"
+  analysis: "/analysis/:slug/"
+  suburbs: "/suburbs/:slug/"
+  guides: "/guides/:slug/"
+
+taxonomies:
+  tag: tags
+
+pagination:
+  pagerSize: 10
+
+params:
+  description: >
+    Property Scout helps investors discover and analyse property opportunities.
+  author: Packwolf Consulting
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+
+  ShowToc: true
+  TocOpen: false
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+theme: PaperMod
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 1
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 20
