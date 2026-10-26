@@ -4,4 +4,4 @@ draft: false
 title: 'Project - Property Scout'
 ---
 
-Main page placeholder
+Something exciting is coming here!!!
